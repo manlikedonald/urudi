@@ -1,0 +1,1114 @@
+$buttonColor: #BA2C36;
+$lightBackground: #353636;
+$darkBackground: #252626;
+$h1Font: 44px;
+$fontColor: #F0F0F0;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    color: $fontColor;
+    input{
+        height: 55px;
+        outline: none;
+    }
+    button{
+        background-color: $buttonColor;
+        color: #fff;
+        border: 1px solid $buttonColor;
+        border-radius: 10px;
+        height: 55px;
+        outline: none;
+        font-size: 18px;
+    }
+}
+.navbar{
+    height: 96px;
+    width: 100%;
+    background-color: $lightBackground;
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        margin: auto 120px;
+        .logo{
+            margin-top: 20px;
+         }
+        .nav-links{
+            color: $fontColor;
+            ul{
+                list-style-type: none;
+                display: flex;
+                margin-top: 41px;
+                li{
+                    margin-right: 4rem;
+                }
+            }
+        }
+        .pop-up{
+            position: absolute;
+            background: $lightBackground;
+            width: 488px;
+            // height: 286px;
+            left: 675px;
+            top: 65px;
+            box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            .pop-up-content{
+                padding: 20px 0 30px 0;
+                .buy-uru{
+                    display: flex;
+                    padding: 30px 30px 0 40px;
+                    font{
+                        margin-left: 20px;
+                        b{
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }  
+        }
+        .login-button{
+            .login{
+               margin-top: 20px;
+               font-size: 18px;
+               width: 141px;
+            }  
+        }
+    }   
+}
+.body{
+    .first-section{
+        background: $darkBackground;
+        height: 45rem;
+        .first-section-text{
+            padding: 240px 0 0 0;
+            text-align: center;
+            margin: auto 30rem;
+            h1{
+                font-size: $h1Font;
+                margin-bottom: 1rem;
+            }
+            button{
+                width: 241px;
+                margin-top: 2rem;
+            }
+        }
+    }
+    .second-section{
+        background: $lightBackground;
+        height: 890px;
+        .second-section-container{
+            border: 1px solid $darkBackground;
+            background: $darkBackground;
+            height: 752px;
+            margin: auto 120px;
+            position: relative;
+            top: 8.5rem;
+            display: flex;
+            h1{
+                margin: 18rem 12rem;
+                font-size: $h1Font;
+                text-align: center;
+            }
+            .border{
+                border-left: 3px solid $buttonColor;
+                margin: 6rem 4rem;
+            }
+            p{
+                margin: 15rem 7rem;
+                line-height: 2rem;
+            }
+            .about-span{
+                position: relative;
+                left: 2rem;
+            }
+            .tick{
+                position: absolute;
+            }
+        }
+    }
+    .third-section{
+        background: $darkBackground;
+        height: 890px;
+        .third-section-container{
+            position: relative;
+            top: 6.5rem;
+            img{
+                width: 420px;
+            }
+        }
+    }
+    .fourth-section{
+        background: $lightBackground;
+        display: flex;
+        h1{
+            font-size: $h1Font;
+            margin: 15rem 12rem;
+            span{
+                color: $buttonColor;
+            }
+        }
+    }
+    .fifth-section{
+        background: $darkBackground;
+        height: 20rem;
+        .fifth-section-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin: auto 250px;
+            top: 6.5rem;
+            h1{
+                font-size: $h1Font;
+            }
+            button{
+            width: 241px;
+            margin-top: 2rem;
+            }
+        }
+        
+    }  
+}
+footer{
+    background: $lightBackground;
+    height: 20rem;
+    .footer-container{
+        margin: auto 120px;
+        position: relative;
+        top: 3.5rem;
+        display: flex;
+        justify-content: space-between;
+        .footer-text{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+
+.login-page{
+    display: flex;
+    .logo-section{
+        width: 50%;
+        background: $darkBackground;
+        height: 59rem;
+        .logo-container{
+            margin: auto 80px;
+            .logo{
+                margin-top: 20px;
+             }
+        }
+        .login-text{
+            margin-top: 17rem;
+            h1{
+                font-size: 34px;
+                font-weight: 500;
+                margin-bottom: 1rem;           }
+            input{
+                background: $lightBackground;
+                border: 1px solid $lightBackground;
+                width: 100%;
+                margin-bottom: 1rem;
+                border-radius: 10px;
+                outline: none;
+            }
+            .forgot-password{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    margin-top: 20px;
+                    color: $buttonColor;
+                }
+                button{
+                    background-color: $buttonColor;
+                    color: #fff;
+                    width: 141px;
+                    border: 1px solid $buttonColor;
+                    border-radius: 10px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .picture-section{
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        background-image: url(assets/273-mckinsey-158.jpeg);
+        background-repeat: no-repeat;
+        background-size: 80rem 59rem;
+        .container{
+            margin: auto 80px;
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 141px;
+                margin-top: 20px;
+                margin-right: 80px;
+            }
+        }
+        
+    }
+}
+
+.pre-signup{
+    background-image: url(assets/y-so-serious.png);
+    position: absolute;
+    width: 100%;
+    height: 60rem;
+    .container{
+        border: 1px solid $darkBackground;
+        background: $darkBackground;
+        margin: 10% 20%;
+        text-align: center;
+        .content{
+            padding: 5rem 0 5rem 0;
+            .logo{
+                margin: 1rem auto;
+            }
+            p{
+                font-weight: 250;
+                margin-bottom: 4rem;
+            }
+            button{
+                width: 200px;
+                margin: 3rem auto;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .navbar{
+        height: 96px;
+        width: 100%;
+        background-color: $lightBackground;
+        .nav-container{
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-between;
+            margin: auto 20px;
+            .logo{
+                margin-top: 20px;
+             }
+            .nav-links{
+                color: $fontColor;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    // flex-direction: column;
+                    margin-top: 30px;
+                    li{
+                        margin-right: 4rem;
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .pop-up{
+                position: absolute;
+                background: $lightBackground;
+                width: 488px;
+                // height: 286px;
+                left: 675px;
+                top: 65px;
+                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                .pop-up-content{
+                    padding: 20px 0 30px 0;
+                    .buy-uru{
+                        display: flex;
+                        padding: 30px 30px 0 40px;
+                        font{
+                            margin-left: 20px;
+                            b{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }  
+            }
+            .login-button{
+                .login{
+                   margin-top: 20px;
+                   font-size: 18px;
+                   width: 141px;
+                }  
+            }
+        }   
+    }
+    .body{
+        .first-section{
+            background: $darkBackground;
+            height: 45rem;
+            .first-section-text{
+                padding: 170px 0 0 0;
+                text-align: center;
+                margin: auto 0;
+                h1{
+                    font-size: 40px;
+                    margin-bottom: 1rem;
+                    padding: 0 5px 0 5px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .second-section{
+            background: $lightBackground;
+            height: 885px;
+            margin-top: -5rem;
+            .second-section-container{
+                border: 1px solid $darkBackground;
+                background: $darkBackground;
+                height: 750px;
+                margin: auto 20px;
+                position: relative;
+                top: 8.5rem;
+                display: flex;
+                h1{
+                    margin: 18rem 1rem;
+                    font-size: 36px;
+                    text-align: center;
+                }
+                .border{
+                    border-left: 3px solid $buttonColor;
+                    margin: 6rem 2rem;
+                }
+                p{
+                    margin: 16rem .5rem;
+                    line-height: 2rem;
+                    font-size: 18px;
+                }
+                .about-span{
+                    position: relative;
+                    left: 2rem;
+                }
+                .tick{
+                    position: absolute;
+                }
+            }
+        }
+        .third-section{
+            background: $darkBackground;
+            height: 100%;
+            display: flex;
+            .third-section-container{
+                position: relative;
+                top: 2rem;
+                img{
+                    width: 360px;
+                    padding: 0 0 4rem 0;
+                }
+            }
+        }
+        .fourth-section{
+            background: $lightBackground;
+            display: flex;
+            width: 100%;
+            img{
+                width: 40rem;
+            }
+            h1{
+                
+                margin: 6rem 11rem;
+                padding: 50px 10px 30px 10px;
+                span{
+                    color: $buttonColor;
+                }
+            }
+        }
+        .fifth-section{
+            background: $darkBackground;
+            height: 20rem;
+            .fifth-section-container{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                margin: auto 10rem;
+                top: 2rem;
+                h1{
+                    font-size: $h1Font;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+            
+        }  
+    }
+    footer{
+        background: $lightBackground;
+        height: 14rem;
+        margin-top: -9rem;
+        .footer-container{
+            margin: auto 20px;
+            position: relative;
+            top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            .footer-text{
+                display: flex;
+                flex-direction: column;
+                margin: auto 1rem;
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .navbar{
+        height: 96px;
+        width: 100%;
+        background-color: $lightBackground;
+        .nav-container{
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-between;
+            margin: auto 20px;
+            .logo{
+                margin-top: 20px;
+             }
+            .nav-links{
+                color: $fontColor;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    // flex-direction: column;
+                    margin-top: 30px;
+                    li{
+                        margin-right: 4rem;
+                        margin-top: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .pop-up{
+                position: absolute;
+                background: $lightBackground;
+                width: 488px;
+                // height: 286px;
+                left: 675px;
+                top: 65px;
+                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                .pop-up-content{
+                    padding: 20px 0 30px 0;
+                    .buy-uru{
+                        display: flex;
+                        padding: 30px 30px 0 40px;
+                        font{
+                            margin-left: 20px;
+                            b{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }  
+            }
+            .login-button{
+                .login{
+                   margin-top: 20px;
+                   font-size: 18px;
+                   width: 141px;
+                }  
+            }
+        }   
+    }
+    .body{
+        .first-section{
+            background: $darkBackground;
+            height: 45rem;
+            .first-section-text{
+                padding: 170px 0 0 0;
+                text-align: center;
+                margin: auto 0;
+                h1{
+                    font-size: 40px;
+                    margin-bottom: 1rem;
+                    padding: 0 5px 0 5px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .second-section{
+            background: $lightBackground;
+            height: 885px;
+            margin-top: -5rem;
+            .second-section-container{
+                border: 1px solid $darkBackground;
+                background: $darkBackground;
+                height: 750px;
+                margin: auto 20px;
+                position: relative;
+                top: 8.5rem;
+                display: flex;
+                h1{
+                    margin: 18rem 1rem;
+                    font-size: 36px;
+                    text-align: center;
+                }
+                .border{
+                    border-left: 3px solid $buttonColor;
+                    margin: 6rem 2rem;
+                }
+                p{
+                    margin: 16rem .5rem;
+                    line-height: 2rem;
+                    font-size: 18px;
+                }
+                .about-span{
+                    position: relative;
+                    left: 2rem;
+                }
+                .tick{
+                    position: absolute;
+                }
+            }
+        }
+        .third-section{
+            background: $darkBackground;
+            height: 100%;
+            display: flex;
+            .third-section-container{
+                position: relative;
+                top: 2rem;
+                img{
+                    width: 256px;
+                    padding: 0 0 4rem 0;
+                }
+            }
+        }
+        .fourth-section{
+            background: $lightBackground;
+            display: flex;
+            width: 100%;
+            img{
+                width: 25rem;
+            }
+            h1{
+                font-size: 36px;
+                margin: 0rem 8rem;
+                padding: 50px 10px 30px 10px;
+                span{
+                    color: $buttonColor;
+                }
+            }
+        }
+        .fifth-section{
+            background: $darkBackground;
+            height: 20rem;
+            .fifth-section-container{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                margin: auto 3rem;
+                top: 2rem;
+                h1{
+                    font-size: 36px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+            
+        }  
+    }
+    footer{
+        background: $lightBackground;
+        height: 14rem;
+        margin-top: -9rem;
+        .footer-container{
+            margin: auto 20px;
+            position: relative;
+            top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            .footer-text{
+                display: flex;
+                flex-direction: column;
+                margin: auto 1rem;
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px){
+    .navbar{
+        height: 96px;
+        width: 100%;
+        background-color: $lightBackground;
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            margin: auto 20px;
+            .logo{
+                margin-top: 20px;
+             }
+            .nav-links{
+                color: $fontColor;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    // flex-direction: column;
+                    margin-top: 0;
+                    li{
+                        margin-right: 3rem;
+                        margin-top: 2.5rem;
+                        font-size: 18px;
+                    }
+                }
+            }
+            .pop-up{
+                position: absolute;
+                background: $lightBackground;
+                width: 488px;
+                // height: 286px;
+                left: 675px;
+                top: 65px;
+                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                .pop-up-content{
+                    padding: 20px 0 30px 0;
+                    .buy-uru{
+                        display: flex;
+                        padding: 30px 30px 0 40px;
+                        font{
+                            margin-left: 20px;
+                            b{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }  
+            }
+            .login-button{
+                .login{
+                   margin-top: 20px;
+                   font-size: 18px;
+                   width: 141px;
+                }  
+            }
+        }   
+    }
+    .body{
+        .first-section{
+            background: $darkBackground;
+            height: 45rem;
+            .first-section-text{
+                padding: 170px 0 0 0;
+                text-align: center;
+                margin: auto 0;
+                h1{
+                    font-size: 40px;
+                    margin-bottom: 1rem;
+                    padding: 0 5px 0 5px;
+                }
+                p{
+                    font-size: 18px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .second-section{
+            background: $lightBackground;
+            height: 885px;
+            margin-top: -5rem;
+            .second-section-container{
+                border: 1px solid $darkBackground;
+                background: $darkBackground;
+                height: 750px;
+                margin: auto 20px;
+                position: relative;
+                top: 8.5rem;
+                display: flex;
+                h1{
+                    margin: 18rem 1rem;
+                    font-size: 36px;
+                    text-align: center;
+                }
+                .border{
+                    border-left: 3px solid $buttonColor;
+                    margin: 6rem 2rem;
+                }
+                p{
+                    margin: 16rem .5rem;
+                    line-height: 2rem;
+                    font-size: 16px;
+                }
+                .why-we-built-urudi{
+                    display: block;
+                }
+                .about-span{
+                    position: relative;
+                    left: 1.5rem;
+                    padding: 0 5px 0 0;
+                }
+                .tick{
+                    position: absolute;
+                }
+            }
+        }
+        .third-section{
+            background: $darkBackground;
+            height: 100%;
+            display: flex;
+            .third-section-container{
+                position: relative;
+                top: 2rem;
+                img{
+                    width: 192px;
+                    padding: 0 0 4rem 0;
+                }
+            }
+        }
+        .fourth-section{
+            background: $lightBackground;
+            display: flex;
+            width: 100%;
+            img{
+                width: 25rem;
+            }
+            h1{
+                font-size: 36px;
+                margin: 0rem 0rem;
+                padding: 50px 10px 30px 10px;
+                span{
+                    color: $buttonColor;
+                }
+            }
+        }
+        .fifth-section{
+            background: $darkBackground;
+            height: 20rem;
+            .fifth-section-container{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                margin: auto 1rem;
+                top: 2rem;
+                h1{
+                    font-size: 36px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+            
+        }  
+    }
+    footer{
+        background: $lightBackground;
+        height: 14rem;
+        margin-top: -9rem;
+        .footer-container{
+            margin: auto 20px;
+            position: relative;
+            top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            .footer-text{
+                display: flex;
+                flex-direction: column;
+                margin: auto 1rem;
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .navbar{
+        height: 96px;
+        width: 100%;
+        background-color: $lightBackground;
+        .nav-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto 20px;
+            .for-mobile-view{
+                display: flex;
+                justify-content: space-between;
+                .logo1{
+                    margin-top: 20px;
+                }
+                .menu-bar{
+                    .hamburger{
+                        width: 1rem;
+                        margin-top: 40px;
+                    }
+                }
+                .hamburger-popup{
+                    border: 1px solid $lightBackground;
+                    background: $lightBackground;
+                    height: 100%;
+                    position: absolute;
+                    left: 0rem;
+                    z-index: 2;
+                    width: 23.3rem;
+                    header{
+                        .logo1{
+                            margin: 20px 20px;
+                        } 
+                        .x{
+                            width: 1.3rem;
+                            float: right;
+                            margin: -3.5rem 1rem;
+                        }
+                    }
+                    .content{
+                        background: $darkBackground;
+                        margin: 1rem auto;
+                        // text-align: center;
+                        height: 100%;
+                        p{
+                            border: 2px solid #282B2B;
+                            margin: 1.5rem 1rem;
+                        }
+
+                        .product-div{
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .arrow{
+                            width: 1rem;
+                        }
+                    }
+                }
+            }
+           
+            
+
+            // navbar content display set to none
+            .logo{
+                margin-top: 20px;
+                display: none;
+             }
+            .nav-links{
+                color: $fontColor;
+                display: none;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 0;
+                    li{
+                        margin-right: 0;
+                        margin-top: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .pop-up{
+                position: absolute;
+                background: $lightBackground;
+                width: 488px;
+                // height: 286px;
+                left: 675px;
+                top: 65px;
+                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                .pop-up-content{
+                    padding: 20px 0 30px 0;
+                    .buy-uru{
+                        display: flex;
+                        padding: 30px 30px 0 40px;
+                        font{
+                            margin-left: 20px;
+                            b{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }  
+            }
+            .login-button{
+                display: none;
+                .login{
+                   margin-top: 20px;
+                   font-size: 18px;
+                   width: 141px;
+                }  
+            }
+        }   
+    }
+    .body{
+        .first-section{
+            background: $darkBackground;
+            height: 45rem;
+            .first-section-text{
+                padding: 170px 0 0 0;
+                text-align: center;
+                margin: auto 0;
+                h1{
+                    font-size: 36px;
+                    margin-bottom: 1rem;
+                    padding: 0 5px 0 5px;
+                }
+                p{
+                    font-size: 12px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .second-section{
+            background: $lightBackground;
+            height: 885px;
+            margin-top: -5rem;
+            .second-section-container{
+                border: 1px solid $darkBackground;
+                background: $darkBackground;
+                height: 750px;
+                margin: auto 20px;
+                position: relative;
+                top: 8.5rem;
+                display: flex;
+                h1{
+                    margin: 18rem 1rem;
+                    font-size: 36px;
+                    text-align: center;
+                }
+                .border{
+                    border-left: 3px solid $buttonColor;
+                    margin: 6rem 2rem;
+                }
+                p{
+                    margin: 6.5rem .5rem;
+                    line-height: 2rem;
+                    font-size: 12px;
+                }
+                .why-we-built-urudi{
+                    display: none;
+                }
+                .about-span{
+                    position: relative;
+                    left: 2rem;
+                }
+                .tick{
+                    position: absolute;
+                }
+            }
+        }
+        .third-section{
+            background: $darkBackground;
+            height: 100%;
+            display: flex;
+            .third-section-container{
+                position: relative;
+                top: 2rem;
+                img{
+                    width: 93.5px;
+                    padding: 0 0 4rem 0;
+                }
+            }
+        }
+        .fourth-section{
+            background: $lightBackground;
+            display: flex;
+            width: 100%;
+            img{
+                width: 15rem;
+            }
+            h1{
+                font-size: 16px;
+                margin: 0rem 0rem;
+                padding: 30px 10px 30px 10px;
+                span{
+                    color: $buttonColor;
+                }
+            }
+        }
+        .fifth-section{
+            background: $darkBackground;
+            height: 20rem;
+            .fifth-section-container{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                margin: auto 1rem;
+                top: 2rem;
+                h1{
+                    font-size: 20px;
+                }
+                button{
+                    width: 180px;
+                    margin-top: 2rem;
+                }
+            }
+            
+        }  
+    }
+    footer{
+        background: $lightBackground;
+        height: 14rem;
+        margin-top: -9rem;
+        .footer-container{
+            margin: auto 20px;
+            position: relative;
+            top: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            .footer-text{
+                display: flex;
+                flex-direction: column;
+                margin: auto 1rem;
+                p{
+                    margin-bottom: 2rem;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
