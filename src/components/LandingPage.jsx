@@ -62,6 +62,9 @@ function LandingPage() {
                                     <img src={arrow} alt="arrow" className='arrow'/>
                                 </p>
                                
+                                <button>
+                                    Log In
+                                </button>
 
                             </div>
                             
