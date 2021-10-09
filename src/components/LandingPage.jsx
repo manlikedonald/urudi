@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import {Link} from 'react-router-dom'
 import logo from '../assets/logo.svg'
 import lady from '../assets/image.svg'
@@ -12,13 +12,13 @@ import handshake from '../assets/handshake.png'
 import uru from '../assets/logo1.svg'
 import token from '../assets/buy-fan-token.svg'
 import nft from '../assets/nft.svg'
-import hamburger from '../assets/bars-solid.svg'
-import x from '../assets/times-solid.svg'
+// import hamburger from '../assets/bars-solid.svg'
+// import x from '../assets/times-solid.svg'
 
 function LandingPage() {
     const [showPopUp, setShowPopUp] = useState(false)
-    const [menuClick, setMenuClick] = useState(false)
-    const isMobile = useMediaQuery({ query: '(max-width: 560px)' })
+    // const [menuClick, setMenuClick] = useState(false)
+    // const isMobile = useMediaQuery({ query: '(max-width: 560px)' })
     return (
         <div>
             <div className="landing-page">

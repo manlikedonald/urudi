@@ -1,20 +1,20 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
-import { useMediaQuery } from 'react-responsive'
+// import { useMediaQuery } from 'react-responsive'
 import logo from '../assets/logo.svg'
-import laughImage from '../assets/laugh.png'
-import uru from '../assets/logo1.svg'
-import token from '../assets/buy-fan-token.svg'
-import nft from '../assets/nft.svg'
+// import laughImage from '../assets/laugh.png'
+// import uru from '../assets/logo1.svg'
+// import token from '../assets/buy-fan-token.svg'
+// import nft from '../assets/nft.svg'
 import tick from '../assets/tick.svg'
-import hamburger from '../assets/bars-solid.svg'
-import x from '../assets/times-solid.svg'
+// import hamburger from '../assets/bars-solid.svg'
+// import x from '../assets/times-solid.svg'
 import arrow from '../assets/dashicons_arrow-right-alt2.svg'
 
 function AboutPage() {
-    const [showPopUp, setShowPopUp] = useState(false)
-    const [menuClick, setMenuClick] = useState(false)
-    const isMobile = useMediaQuery({ query: '(max-width: 560px)' })
+    // const [showPopUp, setShowPopUp] = useState(false)
+    // const [menuClick, setMenuClick] = useState(false)
+    // const isMobile = useMediaQuery({ query: '(max-width: 560px)' })
 
     return (
         <div>
