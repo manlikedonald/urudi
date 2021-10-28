@@ -122,18 +122,28 @@ function AboutPage() {
                                 <b>Product</b>
                             </p>
                             <p>Buy $URU</p>
-                            <p>NFTs</p>
                         </div>
 
                         <div className='footer-text'>
                             <p>
                                 <b>Company</b>
                             </p>
-                            <p>About</p>
-                            <p>Contact Us</p>
+                            
+                            <Link 
+                                to='/about'
+                                style={{textDecoration: 'none'}}
+                            >
+                                <p>About</p>
+                            </Link>
                         </div>
 
-                        <div></div>
+                        <div className='footer-text'>
+                            <p>
+                                <b>Contact</b>
+                            </p>
+                            <p>NFTs</p>
+                        </div>
+
                         <div></div>
                         {/* <div className='footer-text'>
                             <p>

@@ -147,7 +147,6 @@ function LandingPage() {
                                 <b>Product</b>
                             </p>
                             <p>Buy $URU</p>
-                            <p>NFTs</p>
                         </div>
 
                         <div className='footer-text'>
@@ -161,19 +160,16 @@ function LandingPage() {
                             >
                                 <p>About</p>
                             </Link>
-                           
-                            <p>Contact Us</p>
+                        </div>
+
+                        <div className='footer-text'>
+                            <p>
+                                <b>Contact</b>
+                            </p>
+                            <p>NFTs</p>
                         </div>
 
                         <div></div>
-                        <div></div>
-                        {/* <div className='footer-text'>
-                            <p>
-                                <b>Resources</b>
-                            </p> 
-                            <p>Privacy</p>
-                            <p>Terms & Conditions</p>
-                        </div>        */}
                     </div>
                 </footer>
             </div>
