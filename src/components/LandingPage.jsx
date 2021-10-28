@@ -47,9 +47,7 @@ function LandingPage() {
                                 favorite musician
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                                <br />
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                With Urudi, you earn with your idol 
                             </p>
 
                             <div className='button-div'>
@@ -156,7 +154,14 @@ function LandingPage() {
                             <p>
                                 <b>Company</b>
                             </p>
-                            <p>About</p>
+                            
+                            <Link 
+                                to='/about'
+                                style={{textDecoration: 'none'}}
+                            >
+                                <p>About</p>
+                            </Link>
+                           
                             <p>Contact Us</p>
                         </div>
 

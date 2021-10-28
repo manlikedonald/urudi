@@ -49,9 +49,9 @@ function AboutPage() {
                                 artistes and their fans
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                Creating a tighter connection for fans and artistes so that love and wealth 
                                 <br />
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                are distributed together as they both grow 
                             </p>
 
                             <div className='button-div'>
