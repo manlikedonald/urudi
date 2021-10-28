@@ -6,2007 +6,970 @@ $fontColor: #F0F0F0;
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: $fontColor;
+    scroll-behavior: smooth;
+    
     p{
         font-size: 18px;
     }
     input{
-        height: 55px;
+        height: 40px;
         outline: none;
     }
     button{
         background-color: $buttonColor;
         color: #fff;
-        border: 1px solid $buttonColor;
-        border-radius: 10px;
-        height: 55px;
+        border: none;
+        border-radius: 6px;
+        height: 45px;
         outline: none;
-        font-size: 18px;
+        font-size: 16px;
+        padding: 0 1rem 0 1rem;
+        font-weight: 600;
+        img{
+            position: relative;
+            top: 4px;
+            background: transparent;
+        }
     }
 }
+
+.Expo-page{
+    img {
+        width: 26rem;
+        height: 28rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
 .landing-page{
-    .navbar{
-        // height: 96px;
+    background-color: $darkBackground;
+    .background{
+        position: absolute;
+        background-image: url('./assets/image 1.png');
         width: 100%;
-        background-color: $darkBackground;
-        .nav-container{
-            display: flex;
-            justify-content: space-between;
-            margin: auto 120px;
-            .logo{
-                margin-top: 20px;
-            }
-            .nav-links{
-                color: $fontColor;
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    margin-top: 41px;
-                    li{
-                        margin-right: 20rem;
-                        font-size: 16px;
-                    }
+        height: 100vh;
+        opacity: .1;
+    }
+
+    nav, body{
+        position: relative;
+        z-index: 2;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 18rem 0 18rem;
+        .nav-links{
+            ul{
+                list-style: none;
+                padding-top: 1rem;
+                font-size: 14px;
+                display: flex;
+                hr{
+                    border: 2px solid #F15E69;
+                    border-radius: 4px;
+                    width: 1rem;
+                }
+                li{
+                    margin-right: 2rem;
                 }
             }
-            .pop-up{
-                position: absolute;
-                background: $lightBackground;
-                width: 488px;
-                // height: 286px;
-                left: 675px;
-                top: 65px;
-                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-                .pop-up-content{
-                    padding: 20px 0 30px 0;
-                    .buy-uru{
-                        display: flex;
-                        padding: 30px 30px 0 40px;
-                        font{
-                            margin-left: 20px;
-                            b{
-                                font-size: 18px;
-                            }
-                            p{
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }  
-            }
-            .login-button{
-                .login{
-                margin-top: 20px;
-                font-size: 18px;
-                width: 141px;
-                }  
-            }
-        }   
+        }
+        button{
+            margin-top: 4px;
+        }
     }
-    .body{
-        .first-section{
-            background: $darkBackground;
-            .first-section-container{
-                display: flex;
-                padding: 0 220px 0 220px;
-                .first-section-text{
-                    padding: 200px 0 180px 0;
-                    p{
-                        margin-bottom: .5rem;
+
+    body{
+        .first-page{
+            padding: 10rem 0 0 0;
+            .text{
+                text-align: center;
+                h1{
+                    font-size: $h1Font;
+                    line-height: 110.5%;
+                    span{
+                        color: #F15E69
                     }
-                    h1{
-                        font-size: $h1Font;
-                        margin-bottom: .5rem;
-                        width: 100%;
-                    }
-                    hr{
-                        width: 3rem;
-                        border: 2px solid $buttonColor;
-                        margin-bottom: .5rem;
+                } 
+                p{
+                    padding-top: 1rem;
+                }   
+                .button-div{
+                    margin: 5rem auto;
+                    input{
+                        width: 20rem;
+                        margin-right: 1rem;
+                        background: $lightBackground;
+                        border: 1px solid $lightBackground;
                     }
                     button{
-                        width: 241px;
-                        margin-top: 1rem;
+                        padding: 0 2rem 0 2rem;
                         img{
-                            position: absolute;
-                            margin-top: .5px;
+                            position: relative;
+                            top: 3px;
+                            background: transparent;
                         }
                     }
+                    
                 }
-            }
-            .first-section-container::after{
-                    content: "";
-                    position: absolute;
-                    top: 50rem;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    background: $lightBackground;
-                    transform: skewY(3deg);
-                    -webkit-transform: skewY(3deg);
-                    -ms-transform: skewY(3deg);
-                    -moz-transform: skewY(3deg);
-                    transform-origin:top;
-                    height: 10rem;
             }
             
+            @keyframes dera {
+                from {margin-top: 50rem;}
+                to {margin-top: 0rem;}
+            }
+
+            .celebs{
+                animation-name: dera;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-out;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                cursor: zoom-out;
+            }
         }
-        .second-section{
-            background: $lightBackground;
-            padding-bottom: 200px;
-            .second-section-container{
-                border: 1px solid $darkBackground;
-                background: $darkBackground;
-                // height: 752px;
-                margin: auto 120px;
-                position: relative;
-                top: 5.5rem;
-                display: flex;
-                padding: 0px 0 100px 0;
+        .second-page{
+            margin-top: 5rem;
+            padding: 0 200px 0 200px;
+            background-color: $lightBackground;
+            display: flex;
+            justify-content: space-between;
+            .text{
+                padding: 3rem 0 3rem 0;
                 h1{
-                    margin: 18rem 12rem;
                     font-size: $h1Font;
-                    text-align: center;
-                }
-                .border{
-                    border-left: 3px solid $buttonColor;
-                    margin: 6rem 4rem;
                 }
                 p{
-                    margin: 15rem 5rem;
-                    line-height: 2rem;
-                }
-                .second-section-p{
-                    background-image: url(./assets/question-image.svg);
-                    background-position: 0em;
-                    background-repeat: no-repeat;
-                }
-                .about-span{
-                    position: relative;
-                    left: 2rem;
-                }
-                .tick{
-                    position: absolute;
-                }
-            }
-        }
-        .third-section{
-            background: $darkBackground;
-            .third-section-container{
-                position: relative;
-                width: 100%;
-                padding: 60px 0 60px 0;
-                img{
-                    width: 25%;
-                }
-            }
-        }
-        .fourth-section{
-            background: $darkBackground;
-            .fourth-section-container{
-                background: $lightBackground;
-                display: flex;
-                margin: auto 120px;
-                img{
-                    width: 100%;
-                }
-                h1{
-                    font-size: $h1Font;
-                    margin: 15rem 7rem;
-                    span{
-                        color: $buttonColor;
+                    margin-top: 3rem;
+                    line-height: 150.5%;
+                    b{
+                        color: #F15E69;
                     }
+                }
+            }
+            
+        }
+        .third-page{
+            margin-top: 5rem;
+            .container{
+                display: flex;
+                justify-content: center;
+            }
+
+            .text{
+                position: absolute;
+                top: 110rem;
+                left: 18rem;
+                h1{
+                    font-size: 100px;
+                    span{
+                        color: #F15E69;
+                    }
+                }
+                
+                button{
+                    margin-top: 2rem;
                 }    
             }
-            
+
+           
         }
-        .fifth-section{
-            background: $darkBackground;
-            .fifth-section-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 250px;
-                padding: 60px 0 60px 0;
-                h1{
-                    font-size: $h1Font;
-                }
-                button{
-                    width: 241px;
-                    margin-top: 2rem;
-                    img{
-                        position: absolute;
-                        margin-top: .5px;
-                    }     
+        .fourth-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 5rem 18rem 5rem 18rem;
+            h1{
+                font-size: $h1Font;
+                span{
+                    color: #F15E69;
                 }
             }
-            
-        }  
+            button{
+                position: relative;
+                padding: 0 2rem 0 2rem;
+                top: 3rem;
+                img{
+                    position: relative;
+                    top: 3px;
+                    background: transparent;
+                }
+            }
+        }
     }
+
     footer{
-        background: $lightBackground;
-        // height: 20rem;
-        padding: 0 120px 57px 120px;
+        padding: 0 120px 57px 18rem;
         .footer-container{
             // margin: auto 120px;
             position: relative;
             top: 3.5rem;
             display: flex;
             justify-content: space-between;
+            .logo{
+                position: relative;
+                top: -1rem;
+            }
             .footer-text{
                 display: flex;
                 flex-direction: column;
                 p{
                     margin-bottom: 4rem;
+                    font-size: 14px;
                 }
             }
         }
     }
-
 }
 
 .about-page{
-    .navbar{
-        // height: 96px;
+    background-color: $darkBackground;
+    .background{
+        position: absolute;
+        background-image: url('./assets/image 1.png');
         width: 100%;
-        background-color: $darkBackground;
-        .nav-container{
-            display: flex;
-            justify-content: space-between;
-            margin: auto 120px;
-            .logo{
-                margin-top: 20px;
-            }
-            .nav-links{
-                color: $fontColor;
-                ul{
-                    list-style-type: none;
-                    display: flex;
-                    margin-top: 41px;
-                    li{
-                        margin-right: 20rem;
-                        font-size: 16px;
-                    }
+        height: 100vh;
+        opacity: .1;
+    }
+
+    nav, body{
+        position: relative;
+        z-index: 2;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 18rem 0 18rem;
+        .nav-links{
+            ul{
+                list-style: none;
+                padding-top: 1rem;
+                font-size: 14px;
+                display: flex;
+                hr{
+                    border: 2px solid #F15E69;
+                    border-radius: 4px;
+                    width: 1rem;
+                }
+                li{
+                    margin-right: 2rem;
                 }
             }
-            .pop-up{
-                position: absolute;
-                background: $lightBackground;
-                width: 488px;
-                // height: 286px;
-                left: 675px;
-                top: 65px;
-                box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 10px;
-                .pop-up-content{
-                    padding: 20px 0 30px 0;
-                    .buy-uru{
-                        display: flex;
-                        padding: 30px 30px 0 40px;
-                        font{
-                            margin-left: 20px;
-                            b{
-                                font-size: 18px;
-                            }
-                            p{
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }  
-            }
-            .login-button{
-                .login{
-                margin-top: 20px;
-                font-size: 18px;
-                width: 141px;
-                }  
-            }
-        }   
+        }
+        button{
+            margin-top: 4px;
+        }
     }
     .body{
-        .first-section{
-            background: $darkBackground;
-            .first-section-container{
-                display: flex;
-                // padding: 0 220px 0 220px;
-                .first-section-text{
-                    padding: 240px 15% 240px 15%;
-                    text-align: center;
-                    p{
-                        margin-bottom: .5rem;
+        .first-page{
+            padding: 10rem 0 0 0;
+            .text{
+                text-align: center;
+                h1{
+                    font-size: $h1Font;
+                    line-height: 110.5%;
+                    span{
+                        color: #F15E69
                     }
-                    h1{
-                        font-size: $h1Font;
-                        margin-bottom: .5rem;
-                        width: 100%;
-                    }
-                    hr{
-                        width: 3rem;
-                        border: 2px solid $buttonColor;
-                        margin-bottom: .5rem;
+                } 
+                p{
+                    padding-top: 1rem;
+                }   
+                .button-div{
+                    margin: 5rem auto;
+                    input{
+                        width: 20rem;
+                        margin-right: 1rem;
+                        background: $lightBackground;
+                        border: 1px solid $lightBackground;
                     }
                     button{
-                        width: 241px;
-                        margin-top: 1rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }
+                        padding: 0 2rem 0 2rem;
                     }
                 }
-            }
-            .first-section-container::after{
-                    content: "";
-                    position: absolute;
-                    top: 41rem;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    background: $lightBackground;
-                    transform: skewY(3deg);
-                    -webkit-transform: skewY(3deg);
-                    -ms-transform: skewY(3deg);
-                    -moz-transform: skewY(3deg);
-                    transform-origin:top;
-                    height: 10rem;
-            }
-            
-        }
-        .second-section{
-            background: $lightBackground;
-            padding-bottom: 200px;
-            .second-section-container{
-                border: 1px solid $darkBackground;
-                background: $darkBackground;
-                // height: 752px;
-                margin: auto 120px;
-                position: relative;
-                top: 5.5rem;
-                display: flex;
-                padding: 0px 0 100px 0;
-                h1{
-                    margin: 18rem 12rem;
-                    font-size: $h1Font;
-                    text-align: center;
+                .casette{
+                    animation-name: don;
+                    animation-duration: 2.5s;
+                    animation-timing-function: ease-in-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                    cursor: zoom-out;
+                    .lady{
+                        height: 25rem;
+                        position: relative;
+                        bottom: 2rem;
+                        right: .5rem;
+                    }
                 }
-                .border{
-                    border-left: 3px solid $buttonColor;
-                    margin: 6rem 4rem;
+                @keyframes don{
+                    from {margin: 50rem auto;}
+                    to {margin: 1rem auto;};
+
+                    from {display: block;}
+                    to {display: none;}
+                }
+            }
+        }
+        .second-page{
+            margin-top: 5rem;
+            padding: 0 200px 0 200px;
+            background-color: $lightBackground;
+            display: flex;
+            justify-content: space-between;
+            .text{
+                padding: 3rem 0 3rem 0;
+                h1{
+                    font-size: $h1Font;
                 }
                 p{
-                    margin: 15rem 5rem;
-                    line-height: 2rem;
-                }
-                .second-section-p{
-                    background-image: url(./assets/question-image.svg);
-                    background-position: 5em;
-                    background-repeat: no-repeat;
-                }
-                .about-span{
-                    position: relative;
-                    left: 2rem;
+                    margin-top: 3rem;
+                    line-height: 150.5%;
+                    b{
+                        color: #F15E69;
+                    }
                 }
                 .tick{
-                    position: absolute;
+                    position: relative;
+                    top: .3rem;
                 }
             }
         }
-        .fifth-section{
-            background: $darkBackground;
-            position: relative;
-            .fifth-section-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 250px;
-                padding: 60px 0 60px 0;
-                h1{
-                    font-size: $h1Font;
-                }
-                button{
-                    width: 241px;
-                    margin-top: 2rem;
-                    img{
-                        position: absolute;
-                        margin-top: .5px;
-                    }     
+        .third-page{
+            display: flex;
+            justify-content: space-between;
+            padding: 5rem 18rem 5rem 18rem;
+            h1{
+                font-size: $h1Font;
+                span{
+                    color: #F15E69;
                 }
             }
-            
-        }  
+            button{
+                position: relative;
+                padding: 0 2rem 0 2rem;
+                top: 3rem;
+                img{
+                    position: relative;
+                    top: 3px;
+                    background: transparent;
+                }
+            }
+        }
     }
     footer{
-        background: $lightBackground;
-        // height: 20rem;
-        padding: 0 120px 57px 120px;
+        padding: 0 120px 57px 18rem;
         .footer-container{
             // margin: auto 120px;
             position: relative;
             top: 3.5rem;
             display: flex;
             justify-content: space-between;
+            .logo{
+                position: relative;
+                top: -1rem;
+            }
             .footer-text{
                 display: flex;
                 flex-direction: column;
                 p{
                     margin-bottom: 4rem;
+                    font-size: 14px;
                 }
             }
         }
     }
 }
 
-.login-page{
-    display: flex;
-    .logo-section{
-        width: 50%;
-        background: $darkBackground;
-        height: 59rem;
-        .logo-container{
-            margin: auto 80px;
-            .logo{
-                margin-top: 20px;
+@media all and (min-width: 320px) and (max-width: 480px){
+    *{
+
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .Expo-page{
+        img {
+            width: 12rem;
+            height: 14rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .landing-page{
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
+            width: 100%;
+            height: 100vh;
+            opacity: .1;
+        }
+    
+        nav, body{
+            position: relative;
+            z-index: 2;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            button{
+                display: none;
+                margin-top: 4px;
             }
         }
-        .login-text{
-            margin-top: 17rem;
-            h1{
-                font-size: 34px;
-                font-weight: 500;
-                margin-bottom: 1rem;           }
-            input{
-                background: $lightBackground;
-                border: 1px solid $lightBackground;
-                width: 100%;
-                margin-bottom: 1rem;
-                border-radius: 10px;
-                outline: none;
+    
+        body{
+            .first-page{
+                padding: 4rem 0 0 0;
+                .text{
+                    padding: 0 2rem 0 2rem;
+                    text-align: left;
+                    h1{
+                        font-size: 36px;
+                        line-height: 110.5%;
+                        span{
+                            color: #F15E69
+                        }
+                    } 
+                    p{
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
+                        }
+                        button{
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
+                            img{
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
+                            }
+                        }
+                        
+                    }
+                }
+                
+                @keyframes dera {
+                    from {margin-top: 50rem;}
+                    to {margin-top: 0rem;}
+                }
+    
+                .celebs{
+                    animation-name: dera;
+                    animation-duration: 2.5s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                    cursor: zoom-out;
+                    margin-top: 1rem;
+                }
             }
-            .forgot-password{
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
-                p{
-                    margin-top: 20px;
-                    color: $buttonColor;
+                .text{
+                    padding: 2rem 0 2rem 0;
+                    h1{
+                        font-size: 36px;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
+                    }
+                }
+                .image{
+                    position: relative;
+                    right: 3rem;
+                    img{
+                        width: 23rem;
+                    }
+                }
+                
+            }
+            .third-page{
+                margin-top: 2rem;
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    height: 16.5rem;
+                }
+    
+                .text{
+                    position: absolute;
+                    top: 95rem;
+                    left: 2rem;
+                    h1{
+                        font-size: 36px;
+                        span{
+                            color: #F15E69;
+                        }
+                    }
+                    
+                    button{
+                        margin-top: 1rem;
+                    }    
+                }
+    
+               
+            }
+            .fourth-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 36px;
+                    span{
+                        color: #F15E69;
+                    }
                 }
                 button{
-                    background-color: $buttonColor;
-                    color: #fff;
-                    width: 141px;
-                    border: 1px solid $buttonColor;
-                    border-radius: 10px;
-                    font-size: 18px;
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
+                        position: relative;
+                        top: 3px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    
+        footer{
+            padding: 0 0rem 57px 2rem;
+            .footer-container{
+                margin: auto 0px;
+                position: relative;
+                top: 3.5rem;
+                display: flex;
+                justify-content: space-between;
+                .footer-text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3rem;
+                    p{
+                        margin-bottom: 4rem;
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
-    .picture-section{
-        position: relative;
-        width: 100%;
-        padding-top: 56.25%;
-        background-image: url(assets/273-mckinsey-158.jpeg);
-        background-repeat: no-repeat;
-        background-size: 80rem 59rem;
-        .container{
-            margin: auto 80px;
+    
+    .about-page{
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
+            width: 100%;
+            height: 151vh;
+            opacity: .1;
+        }
+    
+        nav, body{
+            position: relative;
+            z-index: 2;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 0rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
+                    }
+                }
+            }
             button{
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 141px;
-                margin-top: 20px;
-                margin-right: 80px;
+                display: none;
+                margin-top: 4px;
             }
         }
-        
+        .body{
+            .first-page{
+                padding: 4rem 2rem 2rem 2rem;
+                .text{
+                    text-align: left;
+                    h1{
+                        font-size: 36px;
+                        line-height: 110.5%;
+                        span{
+                            color: #F15E69
+                        }
+                    } 
+                    p{
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
+                        }
+                        button{
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
+                            img{
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
+                            }
+                        }
+                        
+                    }
+
+                    .casette{
+                        animation-name: don;
+                        animation-duration: 2.5s;
+                        animation-timing-function: ease-in-out;
+                        animation-delay: 0s;
+                        animation-iteration-count: 1;
+                        animation-direction: alternate;
+                        animation-fill-mode: none;
+                        animation-play-state: running;
+                        cursor: zoom-out;
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 4rem;
+                        .lady{
+                            height: auto;
+                            position: relative;
+                            bottom: 1rem;
+                            right: 1rem;
+                        }
+                    }
+                    @keyframes don{
+                        from {margin: 50rem auto;}
+                        to {margin: 4rem auto;};
+    
+                        from {display: block;}
+                        to {display: none;}
+                    }
+                }
+            }
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 2rem 0 2rem 0;
+                    h1{
+                        font-size: 36px;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
+                    }
+                }
+                .laughing-guy{
+                    display: none;
+                }
+                
+            }
+            .third-page{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 36px;
+                    span{
+                        color: #F15E69;
+                    }
+                }
+                button{
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
+                        position: relative;
+                        top: 3px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+        footer{
+            padding: 0 0rem 57px 2rem;
+            .footer-container{
+                margin: auto 0px;
+                position: relative;
+                top: 3.5rem;
+                display: flex;
+                justify-content: space-between;
+                .footer-text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3rem;
+                    p{
+                        margin-bottom: 4rem;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 
-.pre-signup{
-    background-image: url(assets/y-so-serious.png);
-    position: absolute;
-    width: 100%;
-    height: 60rem;
-    .container{
-        border: 1px solid $darkBackground;
-        background: $darkBackground;
-        margin: 10% 20%;
-        text-align: center;
-        .content{
-            padding: 5rem 0 5rem 0;
-            .logo{
-                margin: 1rem auto;
-            }
-            p{
-                font-weight: 250;
-                margin-bottom: 4rem;
+@media all and (min-width: 481px) and (max-width: 768px){
+    .Expo-page{
+        img {
+            width: 15rem;
+            height: 17rem;
+        }
+    }
+
+    .landing-page{
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
+            width: 100%;
+            height: 100vh;
+            opacity: .1;
+        }
+    
+        nav, body{
+            position: relative;
+            z-index: 2;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 2rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
+                    }
+                }
             }
             button{
-                width: 200px;
-                margin: 3rem auto;
+                margin-top: 4px;
             }
         }
-        
-    }
-}
-@media screen and (max-width: 1440px){
-    .landing-page{
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 120px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 20rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 220px 0 220px;
-                    .first-section-text{
-                        padding: 100px 0 150px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: $h1Font;
-                            margin-bottom: .5rem;
-                            width: 110%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 50rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    padding: 0px 0 100px 0;
+    
+        body{
+            .first-page{
+                padding: 4rem 0rem 0 0rem;
+                .text{
+                    padding: 0 2rem 0 2rem;
+                    text-align: center;
                     h1{
-                        margin: 18rem 12rem;
-                        font-size: $h1Font;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 3px solid $buttonColor;
-                        margin: 6rem 4rem;
-                    }
-                    p{
-                        margin: 15rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: -5em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .third-section{
-                background: $darkBackground;
-                .third-section-container{
-                    position: relative;
-                    width: 100%;
-                    padding: 60px 0 60px 0;
-                    img{
-                        width: 25%;
-                    }
-                }
-            }
-            .fourth-section{
-                background: $darkBackground;
-                .fourth-section-container{
-                    background: $lightBackground;
-                    display: flex;
-                    margin: auto 120px;
-                    img{
-                        width: 100%;
-                    }
-                    h1{
-                        font-size: $h1Font;
-                        margin: 15rem 2rem;
+                        font-size: 48px;
+                        line-height: 110.5%;
                         span{
-                            color: $buttonColor;
+                            color: #F15E69
                         }
-                    }    
-                }
-                
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    justify-content: space-between;
-                    margin: auto 250px;
-                    padding: 60px 0 60px 0;
-                    h1{
-                        font-size: $h1Font;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 120px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
+                    } 
                     p{
-                        margin-bottom: 4rem;
-                    }
-                }
-            }
-        }
-    
-    }
-    
-    .about-page{
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 120px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 20rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    // padding: 0 220px 0 220px;
-                    .first-section-text{
-                        padding: 240px 15% 240px 15%;
-                        text-align: center;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: $h1Font;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
                         }
                         button{
-                            width: 241px;
-                            margin-top: 1rem;
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
                             img{
-                                position: absolute;
-                                margin-top: .5px;
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
                             }
                         }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 41rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 18rem 12rem;
-                        font-size: $h1Font;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 3px solid $buttonColor;
-                        margin: 6rem 4rem;
-                    }
-                    p{
-                        margin: 15rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: 0em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .fifth-section{
-                background: $darkBackground;
-                position: relative;
-                .fifth-section-container{
-                    display: flex;
-                    justify-content: space-between;
-                    margin: auto 250px;
-                    padding: 60px 0 60px 0;
-                    h1{
-                        font-size: $h1Font;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
+                        
                     }
                 }
                 
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 120px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
-                    p{
-                        margin-bottom: 4rem;
-                    }
+                @keyframes dera {
+                    from {margin-top: 50rem;}
+                    to {margin-top: 0rem;}
                 }
-            }
-        }
-    }
-}
-@media screen and (max-width: 1150px){
-    .landing-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 10rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 0px 0 40px;
-                    .first-section-text{
-                        padding: 100px 0 140px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: $h1Font;
-                            margin-bottom: .5rem;
-                            width: 110%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 50rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 5rem 2rem;
-                        font-size: $h1Font;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
-                    }
-                    p{
-                        margin: 7rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: 6em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .third-section{
-                background: $darkBackground;
-                .third-section-container{
-                    position: relative;
-                    width: 100%;
-                    padding: 60px 0 60px 0;
-                    img{
-                        width: 25%;
-                    }
-                }
-            }
-            .fourth-section{
-                background: $darkBackground;
-                margin-top: -1px;
-                .fourth-section-container{
-                    background: $lightBackground;
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto 40px;
-                    img{
-                        width: 100%;
-                    }
-                    h1{
-                        font-size: $h1Font;
-                        margin: 2rem 1rem;
-                        text-align: center;
-                        span{
-                            color: $buttonColor;
-                        }
-                    }    
-                }
-                
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    // flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto auto;
-                    padding: 60px 20px 60px 20px;
-                    h1{
-                        font-size: $h1Font;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 20px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
-                    p{
-                        margin-bottom: 4rem;
-                    }
-                }
-            }
-        }
     
-    }
-    
-    .about-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
+                .celebs{
+                    animation-name: dera;
+                    animation-duration: 2.5s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                    cursor: zoom-out;
+                    margin-top: 1rem;
+                }
+            }
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
                 display: flex;
+                // flex-direction: column;
                 justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 10rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 20px 0 20px;
-                    .first-section-text{
-                        padding: 140px 0 200px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: $h1Font;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 34rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 5rem 2rem;
-                        font-size: $h1Font;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
-                    }
-                    p{
-                        margin: 7rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: 8em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    // flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto 0px;
-                    padding: 60px 20px 60px 20px;
-                    h1{
-                        font-size: $h1Font;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 120px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
-                    p{
-                        margin-bottom: 4rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 960px){
-    .landing-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 10rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 20px 0 20px;
-                    .first-section-text{
-                        padding: 140px 0 140px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: 48px;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 50rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 5rem 2rem;
-                        font-size: 48px;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
-                    }
-                    p{
-                        margin: 7rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: 0em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .third-section{
-                background: $darkBackground;
-                .third-section-container{
-                    position: relative;
-                    width: 100%;
-                    padding: 60px 0 60px 0;
-                    img{
-                        width: 25%;
-                    }
-                }
-            }
-            .fourth-section{
-                background: $darkBackground;
-                margin-top: -1px;
-                .fourth-section-container{
-                    background: $lightBackground;
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto 40px;
-                    img{
-                        width: 100%;
-                    }
-                    h1{
-                        font-size: 48px;
-                        margin: 2rem 1rem;
-                        span{
-                            color: $buttonColor;
-                        }
-                    }    
-                }
-                
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    // flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto auto;
-                    padding: 60px 0 60px 0;
-                    h1{
-                        font-size: 48px;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 20px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
-                    p{
-                        margin-bottom: 4rem;
-                    }
-                }
-            }
-        }
-    
-    }
-    
-    .about-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 10rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 20px 0 20px;
-                    .first-section-text{
-                        padding: 140px 0 140px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: 48px;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 28rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 200px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 120px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 5rem 2rem;
-                        font-size: 48px;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
-                    }
-                    p{
-                        margin: 7rem 5rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: 0em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    // flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto 0px;
-                    padding: 60px 0 60px 0;
-                    h1{
-                        font-size: 48px;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
-        }
-        footer{
-            background: $lightBackground;
-            // height: 20rem;
-            padding: 0 120px 57px 20px;
-            .footer-container{
-                // margin: auto 120px;
-                position: relative;
-                top: 3.5rem;
-                display: flex;
-                justify-content: space-between;
-                .footer-text{
-                    display: flex;
-                    flex-direction: column;
-                    p{
-                        margin-bottom: 4rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 560px){
-    .landing-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
-            width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 0rem;
-                            font-size: 16px;
-                        }
-                    }
-                }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
-        }
-        .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 20px 0 20px;
-                    .first-section-text{
-                        padding: 140px 0 140px 0;
-                        p{
-                            margin-bottom: .5rem;
-                        }
-                        h1{
-                            font-size: 36px;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
-                        }
-                        button{
-                            width: 241px;
-                            margin-top: 1rem;
-                            img{
-                                position: absolute;
-                                margin-top: .5px;
-                            }
-                        }
-                    }
-                    .first-section-image{
-                        display: none;
-                    }
-                }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 36rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
-            }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 180px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 20px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
-                    h1{
-                        margin: 5rem 2rem;
-                        font-size: 36px;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
-                    }
-                    p{
-                        margin: 7rem 1rem;
-                        line-height: 2rem;
-                    }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: -8em;
-                        background-repeat: no-repeat;
-                    }
-                    .about-span{
-                        position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
-                    }
-                }
-            }
-            .third-section{
-                display: none;
-                background: $darkBackground;
-                .third-section-container{
-                    position: relative;
-                    width: 100%;
-                    padding: 60px 0 60px 0;
-                    img{
-                        width: 25%;
-                    }
-                }
-            }
-            .fourth-section{
-                background: $darkBackground;
-                margin-top: -1px;
-                .fourth-section-container{
-                    background: $lightBackground;
-                    display: flex;
-                    flex-direction: column;
-                    margin: auto 40px;
-                    img{
-                        width: 100%;
-                    }
-                    h1{
-                        font-size: 36px;
-                        margin: 2rem 1rem;
-                        text-align: center;
-                        span{
-                            color: $buttonColor;
-                        }
-                    }    
-                }
-                
-            }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto auto;
-                    padding: 60px 0 60px 0;
-                    align-items: center;
+                .text{
+                    padding: 2rem 0 2rem 0;
                     h1{
                         font-size: 36px;
                     }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
+                    p{
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
+                    }
+                }
+                .image{
+                    position: relative;
+                    right: 0rem;
+                    top: 4.5rem;
+                    img{
+                        width: 23rem;
                     }
                 }
                 
-            }  
+            }
+            .third-page{
+                margin-top: 2rem;
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    height: 31rem;
+                }
+    
+                .text{
+                    position: absolute;
+                    top: 76rem;
+                    left: 5rem;
+                    h1{
+                        font-size: 64px;
+                        span{
+                            color: #F15E69;
+                        }
+                    }
+                    
+                    button{
+                        margin-top: 1rem;
+                    }    
+                }
+    
+               
+            }
+            .fourth-page{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 36px;
+                    span{
+                        color: #F15E69;
+                    }
+                }
+                button{
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
+                        position: relative;
+                        top: 3px;
+                        background: transparent;
+                    }
+                }
+            }
         }
+    
         footer{
-            background: $lightBackground;
-            // height: 30rem;
-            padding: 0 20px 57px 20px;
+            padding: 0 0rem 57px 2rem;
             .footer-container{
-                // margin: auto 120px;
+                margin: auto 0px;
                 position: relative;
                 top: 3.5rem;
                 display: flex;
@@ -2014,208 +977,176 @@ $fontColor: #F0F0F0;
                 .footer-text{
                     display: flex;
                     flex-direction: column;
+                    margin-left: 3rem;
                     p{
                         margin-bottom: 4rem;
                         font-size: 14px;
                     }
                 }
-                // .footer-product{
-                //     position: relative;
-                //     left: 5rem;
-                // }
-                // .footer-company{
-                //     position: relative;
-                //     top: 17rem;
-                //     // right: 17rem;
-                // }
             }
         }
-    
     }
     
     .about-page{
-        overflow: hidden;
-        .navbar{
-            // height: 96px;
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
             width: 100%;
-            background-color: $darkBackground;
-            .nav-container{
-                display: flex;
-                justify-content: space-between;
-                margin: auto 20px;
-                .logo{
-                    margin-top: 20px;
-                }
-                .nav-links{
-                    color: $fontColor;
-                    ul{
-                        list-style-type: none;
-                        display: flex;
-                        margin-top: 41px;
-                        li{
-                            margin-right: 0rem;
-                            font-size: 16px;
-                        }
+            height: 94vh;
+            opacity: .1;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 2rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
                     }
                 }
-                .pop-up{
-                    position: absolute;
-                    background: $lightBackground;
-                    width: 488px;
-                    // height: 286px;
-                    left: 675px;
-                    top: 65px;
-                    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-                    border-radius: 10px;
-                    .pop-up-content{
-                        padding: 20px 0 30px 0;
-                        .buy-uru{
-                            display: flex;
-                            padding: 30px 30px 0 40px;
-                            font{
-                                margin-left: 20px;
-                                b{
-                                    font-size: 18px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }  
-                }
-                .login-button{
-                    .login{
-                    margin-top: 20px;
-                    font-size: 18px;
-                    width: 141px;
-                    }  
-                }
-            }   
+            }
+            button{
+                // display: none;
+                margin-top: 4px;
+            }
         }
         .body{
-            margin-top: -1px;
-            .first-section{
-                background: $darkBackground;
-                .first-section-container{
-                    display: flex;
-                    padding: 0 20px 0 20px;
-                    .first-section-text{
-                        padding: 140px 0 140px 0;
-                        p{
-                            margin-bottom: .5rem;
+            .first-page{
+                padding: 4rem 0 0 0;
+                .text{
+                    text-align: center;
+                    h1{
+                        padding: 0 2rem 0 2rem;
+                        font-size: 48px;
+                        line-height: 110.5%;
+                        span{
+                            color: #F15E69
                         }
-                        h1{
-                            font-size: 36px;
-                            margin-bottom: .5rem;
-                            width: 100%;
-                        }
-                        hr{
-                            width: 3rem;
-                            border: 2px solid $buttonColor;
-                            margin-bottom: .5rem;
+                    } 
+                    p{
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
                         }
                         button{
-                            width: 241px;
-                            margin-top: 1rem;
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
                             img{
-                                position: absolute;
-                                margin-top: .5px;
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
                             }
                         }
+                        
                     }
-                    .first-section-image{
-                        display: none;
+
+                    .casette{
+                        animation-name: don;
+                        animation-duration: 2.5s;
+                        animation-timing-function: ease-in-out;
+                        animation-delay: 0s;
+                        animation-iteration-count: 1;
+                        animation-direction: alternate;
+                        animation-fill-mode: none;
+                        animation-play-state: running;
+                        cursor: zoom-out;
+                        display: flex;
+                        // flex-direction: column;
+                        align-items: center;
+                        margin-top: 4rem;
+                        padding: 0 2rem 0 0;
+                        .lady{
+                            height: 20rem;
+                            width: 25rem;
+                            position: relative;
+                            bottom: 0rem;
+                            right: .5rem;
+                        }
+                        .player{
+                            height: 23rem;
+                            width: 28rem;
+                        }
+                    }
+                    @keyframes don{
+                        from {margin: 50rem auto;}
+                        to {margin: 4rem auto;};
+    
+                        from {display: block;}
+                        to {display: none;}
                     }
                 }
-                .first-section-container::after{
-                        content: "";
-                        position: absolute;
-                        top: 32rem;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        background: $lightBackground;
-                        transform: skewY(3deg);
-                        -webkit-transform: skewY(3deg);
-                        -ms-transform: skewY(3deg);
-                        -moz-transform: skewY(3deg);
-                        transform-origin:top;
-                        height: 10rem;
-                }
-                
             }
-            .second-section{
-                background: $lightBackground;
-                padding-bottom: 180px;
-                .second-section-container{
-                    border: 1px solid $darkBackground;
-                    background: $darkBackground;
-                    // height: 752px;
-                    margin: auto 20px;
-                    position: relative;
-                    top: 5.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0px 0 100px 0;
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 2rem 0 2rem 0;
                     h1{
-                        margin: 5rem 2rem;
                         font-size: 36px;
-                        text-align: center;
-                    }
-                    .border{
-                        border-left: 0px solid $buttonColor;
-                        border-bottom: 3px solid $buttonColor;
-                        margin: 0rem 2rem;
                     }
                     p{
-                        margin: 7rem 1rem;
-                        line-height: 2rem;
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
                     }
-                    .second-section-p{
-                        background-image: url(./assets/question-image.svg);
-                        background-position: -8em;
-                        background-repeat: no-repeat;
+                }
+                .laughing-guy{
+                    display: none;
+                }
+                
+            }
+            .third-page{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 36px;
+                    span{
+                        color: #F15E69;
                     }
-                    .about-span{
+                }
+                button{
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
                         position: relative;
-                        left: 2rem;
-                    }
-                    .tick{
-                        position: absolute;
+                        top: 3px;
+                        background: transparent;
                     }
                 }
             }
-            .fifth-section{
-                background: $darkBackground;
-                .fifth-section-container{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    margin: auto auto;
-                    padding: 60px 0 60px 0;
-                    align-items: center;
-                    h1{
-                        font-size: 36px;
-                    }
-                    button{
-                        width: 241px;
-                        margin-top: 2rem;
-                        img{
-                            position: absolute;
-                            margin-top: .5px;
-                        }     
-                    }
-                }
-                
-            }  
         }
         footer{
-            background: $lightBackground;
-            // height: 30rem;
-            padding: 0 20px 57px 20px;
+            padding: 0 0rem 57px 2rem;
             .footer-container{
-                // margin: auto 120px;
+                margin: auto 0px;
                 position: relative;
                 top: 3.5rem;
                 display: flex;
@@ -2223,20 +1154,392 @@ $fontColor: #F0F0F0;
                 .footer-text{
                     display: flex;
                     flex-direction: column;
+                    margin-left: 3rem;
                     p{
                         margin-bottom: 4rem;
                         font-size: 14px;
                     }
                 }
-                // .footer-product{
-                //     position: relative;
-                //     left: 5rem;
-                // }
-                // .footer-company{
-                //     position: relative;
-                //     top: 17rem;
-                //     // right: 17rem;
-                // }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px){
+    .Expo-page{
+        img {
+            width: 21rem;
+            height: 23rem;
+        }
+    }
+
+    .landing-page{
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
+            width: 100%;
+            height: 70vh;
+            opacity: .1;
+        }
+    
+        nav, body{
+            position: relative;
+            z-index: 2;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 2rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            button{
+                margin-top: 4px;
+            }
+        }
+    
+        body{
+            .first-page{
+                padding: 4rem 0rem 0 0rem;
+                .text{
+                    padding: 0 2rem 0 2rem;
+                    text-align: center;
+                    h1{
+                        font-size: 64px;
+                        line-height: 110.5%;
+                        span{
+                            color: #F15E69
+                        }
+                    } 
+                    p{
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
+                        }
+                        button{
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
+                            img{
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
+                            }
+                        }
+                        
+                    }
+                }
+                
+                @keyframes dera {
+                    from {margin-top: 50rem;}
+                    to {margin-top: 0rem;}
+                }
+    
+                .celebs{
+                    animation-name: dera;
+                    animation-duration: 2.5s;
+                    animation-timing-function: ease-out;
+                    animation-delay: 0s;
+                    animation-iteration-count: 1;
+                    animation-direction: alternate;
+                    animation-fill-mode: none;
+                    animation-play-state: running;
+                    cursor: zoom-out;
+                    margin-top: 1rem;
+                }
+            }
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 2rem 0 2rem 0;
+                    h1{
+                        font-size: 48px;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
+                    }
+                }
+                .image{
+                    position: relative;
+                    right: 0rem;
+                    top: 2rem;
+                    img{
+                        width: 23rem;
+                    }
+                }
+                
+            }
+            .third-page{
+                margin-top: 2rem;
+                .container{
+                    display: flex;
+                    justify-content: center;
+                    height: 43rem;
+                }
+    
+                .text{
+                    position: absolute;
+                    top: 84rem;
+                    left: 5rem;
+                    h1{
+                        font-size: 84px;
+                        span{
+                            color: #F15E69;
+                        }
+                    }
+                    
+                    button{
+                        margin-top: 1rem;
+                    }    
+                }
+    
+               
+            }
+            .fourth-page{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 48px;
+                    span{
+                        color: #F15E69;
+                    }
+                }
+                button{
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
+                        position: relative;
+                        top: 3px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    
+        footer{
+            padding: 0 0rem 57px 2rem;
+            .footer-container{
+                margin: auto 0px;
+                position: relative;
+                top: 3.5rem;
+                display: flex;
+                justify-content: space-between;
+                .footer-text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3rem;
+                    p{
+                        margin-bottom: 4rem;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about-page{
+        background-color: $darkBackground;
+        .background{
+            position: absolute;
+            background-image: url('./assets/image 1.png');
+            width: 100%;
+            height: 73vh;
+            opacity: .1;
+        }
+    
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 2rem 0 2rem;
+            .nav-links{
+                ul{
+                    list-style: none;
+                    padding-top: 1rem;
+                    font-size: 14px;
+                    display: flex;
+                    hr{
+                        border: 2px solid #F15E69;
+                        border-radius: 4px;
+                        width: 1rem;
+                    }
+                    li{
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            button{
+                // display: none;
+                margin-top: 4px;
+            }
+        }
+        .body{
+            .first-page{
+                padding: 4rem 0 0 0;
+                .text{
+                    text-align: center;
+                    h1{
+                        padding: 0 2rem 0 2rem;
+                        font-size: 64px;
+                        line-height: 110.5%;
+                        span{
+                            color: #F15E69
+                        }
+                    } 
+                    p{
+                        padding-top: 1rem;
+                    }   
+                    .button-div{
+                        margin: 2rem auto;
+                        input{
+                            width: 20rem;
+                            margin-right: 1rem;
+                            background: $lightBackground;
+                            border: 1px solid $lightBackground;
+                        }
+                        button{
+                            margin-top: .5rem;
+                            padding: 0 2rem 0 2rem;
+                            width: 20rem;
+                            img{
+                                position: relative;
+                                top: 3px;
+                                background: transparent;
+                            }
+                        }
+                        
+                    }
+
+                    .casette{
+                        animation-name: don;
+                        animation-duration: 2.5s;
+                        animation-timing-function: ease-in-out;
+                        animation-delay: 0s;
+                        animation-iteration-count: 1;
+                        animation-direction: alternate;
+                        animation-fill-mode: none;
+                        animation-play-state: running;
+                        cursor: zoom-out;
+                        display: flex;
+                        // flex-direction: column;
+                        align-items: center;
+                        margin-top: 4rem;
+                        .lady{
+                            height: 25rem;
+                            width: 30rem;
+                            position: relative;
+                            bottom: 0rem;
+                            right: .5rem;
+                        }
+                    }
+                    @keyframes don{
+                        from {margin: 50rem auto;}
+                        to {margin: 4rem auto;};
+    
+                        from {display: block;}
+                        to {display: none;}
+                    }
+                }
+            }
+            .second-page{
+                margin-top: 2rem;
+                padding: 0 2rem 2rem 2rem;
+                background-color: $lightBackground;
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                .text{
+                    padding: 2rem 0 2rem 0;
+                    h1{
+                        font-size: 48px;
+                    }
+                    p{
+                        margin-top: 1rem;
+                        line-height: 150.5%;
+                        b{
+                            color: #F15E69;
+                        }
+                    }
+                }
+                .laughing-guy{
+                    // display: none;
+                    position: relative;
+                    right: 6rem;
+                }
+                
+            }
+            .third-page{
+                display: flex;
+                // flex-direction: column;
+                justify-content: space-between;
+                padding: 2rem 2rem 2rem 2rem;
+                h1{
+                    font-size: 48px;
+                    span{
+                        color: #F15E69;
+                    }
+                }
+                button{
+                    position: relative;
+                    padding: 0 2rem 0 2rem;
+                    top: 1rem;
+                    img{
+                        position: relative;
+                        top: 3px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+        footer{
+            padding: 0 0rem 57px 2rem;
+            .footer-container{
+                margin: auto 0px;
+                position: relative;
+                top: 3.5rem;
+                display: flex;
+                justify-content: space-between;
+                .footer-text{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 3rem;
+                    p{
+                        margin-bottom: 4rem;
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }
