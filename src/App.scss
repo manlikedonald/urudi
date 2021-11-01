@@ -10,6 +10,7 @@ $fontColor: #F0F0F0;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: $fontColor;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
     p{
         font-size: 18px;
@@ -53,7 +54,7 @@ $fontColor: #F0F0F0;
         position: absolute;
         background-image: url('./assets/image 1.png');
         width: 100%;
-        height: 100vh;
+        height: 121vh;
         opacity: .1;
     }
 
@@ -95,6 +96,7 @@ $fontColor: #F0F0F0;
                 h1{
                     font-size: $h1Font;
                     line-height: 110.5%;
+                    padding: 0 400px 0 400px;
                     span{
                         color: #F15E69
                     }
@@ -238,7 +240,7 @@ $fontColor: #F0F0F0;
         position: absolute;
         background-image: url('./assets/image 1.png');
         width: 100%;
-        height: 115vh;
+        height: 121vh;
         opacity: .1;
     }
 
@@ -279,6 +281,7 @@ $fontColor: #F0F0F0;
                 h1{
                     font-size: $h1Font;
                     line-height: 110.5%;
+                    padding: 0 370px 0 370px;
                     span{
                         color: #F15E69
                     }
@@ -346,6 +349,10 @@ $fontColor: #F0F0F0;
                     position: relative;
                     top: .3rem;
                 }
+            }
+            .laughing-guy{
+                position: relative;
+                right: 7.5rem;
             }
         }
         .third-page{
@@ -461,6 +468,7 @@ $fontColor: #F0F0F0;
                     h1{
                         font-size: 36px;
                         line-height: 110.5%;
+                        padding: 0 0rem 0 0rem;
                         span{
                             color: #F15E69
                         }
@@ -477,7 +485,7 @@ $fontColor: #F0F0F0;
                             border: 1px solid $lightBackground;
                         }
                         button{
-                            margin-top: .5rem;
+                            margin-top: 1rem;
                             padding: 0 2rem 0 2rem;
                             width: 20rem;
                             img{
@@ -505,11 +513,11 @@ $fontColor: #F0F0F0;
                     animation-fill-mode: none;
                     animation-play-state: running;
                     cursor: zoom-out;
-                    margin-top: 1rem;
+                    margin-top: 0rem;
                 }
             }
             .second-page{
-                margin-top: 2rem;
+                margin-top: 0rem;
                 padding: 0 2rem 2rem 2rem;
                 background-color: $lightBackground;
                 display: flex;
@@ -530,15 +538,15 @@ $fontColor: #F0F0F0;
                 }
                 .image{
                     position: relative;
-                    right: 3rem;
+                    right: 1rem;
                     img{
-                        width: 23rem;
+                        width: 20rem;
                     }
                 }
                 
             }
             .third-page{
-                margin-top: 2rem;
+                margin-top: 0rem;
                 .container{
                     display: flex;
                     justify-content: center;
@@ -547,7 +555,7 @@ $fontColor: #F0F0F0;
     
                 .text{
                     position: absolute;
-                    top: 91.5rem;
+                    top: 85rem;
                     left: 2rem;
                     h1{
                         font-size: 36px;
@@ -568,8 +576,9 @@ $fontColor: #F0F0F0;
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 2rem 2rem 2rem 2rem;
+                text-align: center;
                 h1{
-                    font-size: 36px;
+                    font-size: 34px;
                     span{
                         color: #F15E69;
                     }
@@ -614,7 +623,7 @@ $fontColor: #F0F0F0;
             position: absolute;
             background-image: url('./assets/image 1.png');
             width: 100%;
-            height: 143vh;
+            height: 137.2vh;
             opacity: .1;
         }
     
@@ -656,6 +665,7 @@ $fontColor: #F0F0F0;
                     h1{
                         font-size: 36px;
                         line-height: 110.5%;
+                        padding: 0 0 0 0;
                         span{
                             color: #F15E69
                         }
@@ -672,7 +682,7 @@ $fontColor: #F0F0F0;
                             border: 1px solid $lightBackground;
                         }
                         button{
-                            margin-top: .5rem;
+                            margin-top: 1rem;
                             padding: 0 2rem 0 2rem;
                             width: 20rem;
                             img{
@@ -696,7 +706,7 @@ $fontColor: #F0F0F0;
                         cursor: zoom-out;
                         display: flex;
                         flex-direction: column;
-                        margin-top: 4rem;
+                        margin-top: 2rem;
                         .lady{
                             height: 16rem;
                             width: 19.5rem;
@@ -711,7 +721,7 @@ $fontColor: #F0F0F0;
                     }
                     @keyframes don{
                         from {margin: 50rem auto;}
-                        to {margin: 4rem auto;};
+                        to {margin: 2rem auto;};
     
                         from {display: block;}
                         to {display: none;}
@@ -748,8 +758,9 @@ $fontColor: #F0F0F0;
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 2rem 2rem 2rem 2rem;
+                text-align: center;
                 h1{
-                    font-size: 36px;
+                    font-size: 34px;
                     span{
                         color: #F15E69;
                     }
@@ -845,6 +856,7 @@ $fontColor: #F0F0F0;
                     h1{
                         font-size: 48px;
                         line-height: 110.5%;
+                        padding: 0 0px 0 0px;
                         span{
                             color: #F15E69
                         }
@@ -889,35 +901,35 @@ $fontColor: #F0F0F0;
                     animation-fill-mode: none;
                     animation-play-state: running;
                     cursor: zoom-out;
-                    margin-top: 1rem;
+                    margin-top: 0rem;
                 }
             }
             .second-page{
                 margin-top: 2rem;
-                padding: 0 2rem 2rem 2rem;
+                padding: 0rem 0rem 0rem 2rem;
                 background-color: $lightBackground;
                 display: flex;
                 // flex-direction: column;
                 justify-content: space-between;
                 .text{
-                    padding: 2rem 0 2rem 0;
+                    // padding: 2rem 0 2rem 0;
                     h1{
                         font-size: 36px;
                     }
                     p{
                         margin-top: 1rem;
                         line-height: 150.5%;
+                        font-size: 16px;
                         b{
                             color: #F15E69;
                         }
                     }
                 }
                 .image{
-                    position: relative;
-                    right: 0rem;
-                    top: 4.5rem;
+                    margin-top: 2rem;
                     img{
                         width: 23rem;
+                        height: 20rem;
                     }
                 }
                 
@@ -932,7 +944,7 @@ $fontColor: #F0F0F0;
     
                 .text{
                     position: absolute;
-                    top: 76rem;
+                    top: 70rem;
                     left: 5rem;
                     h1{
                         font-size: 64px;
@@ -999,7 +1011,7 @@ $fontColor: #F0F0F0;
             position: absolute;
             background-image: url('./assets/image 1.png');
             width: 100%;
-            height: 94vh;
+            height: 81vh;
             opacity: .1;
         }
     
@@ -1030,7 +1042,7 @@ $fontColor: #F0F0F0;
         }
         .body{
             .first-page{
-                padding: 4rem 0 0 0;
+                padding: 4rem 0 2rem 0;
                 .text{
                     text-align: center;
                     h1{
@@ -1042,7 +1054,7 @@ $fontColor: #F0F0F0;
                         }
                     } 
                     p{
-                        padding-top: 1rem;
+                        padding: 1rem 3rem 0 3rem;
                     }   
                     .button-div{
                         margin: 2rem auto;
@@ -1078,7 +1090,7 @@ $fontColor: #F0F0F0;
                         display: flex;
                         // flex-direction: column;
                         align-items: center;
-                        margin-top: 4rem;
+                        margin-top: 2rem;
                         padding: 0 2rem 0 0;
                         .lady{
                             height: 20rem;
@@ -1094,15 +1106,12 @@ $fontColor: #F0F0F0;
                     }
                     @keyframes don{
                         from {margin: 50rem auto;}
-                        to {margin: 4rem auto;};
-    
-                        from {display: block;}
-                        to {display: none;}
+                        to {margin: 0rem auto;}
                     }
                 }
             }
             .second-page{
-                margin-top: 2rem;
+                margin-top: 0rem;
                 padding: 0 2rem 2rem 2rem;
                 background-color: $lightBackground;
                 display: flex;
@@ -1228,6 +1237,7 @@ $fontColor: #F0F0F0;
                     h1{
                         font-size: 64px;
                         line-height: 110.5%;
+                        padding: 0 0px 0 0px;
                         span{
                             color: #F15E69
                         }
@@ -1272,7 +1282,7 @@ $fontColor: #F0F0F0;
                     animation-fill-mode: none;
                     animation-play-state: running;
                     cursor: zoom-out;
-                    margin-top: 1rem;
+                    margin-top: 0rem;
                 }
             }
             .second-page{
@@ -1315,7 +1325,7 @@ $fontColor: #F0F0F0;
     
                 .text{
                     position: absolute;
-                    top: 84rem;
+                    top: 82rem;
                     left: 5rem;
                     h1{
                         font-size: 84px;
@@ -1382,7 +1392,7 @@ $fontColor: #F0F0F0;
             position: absolute;
             background-image: url('./assets/image 1.png');
             width: 100%;
-            height: 73vh;
+            height: 103.5vh;
             opacity: .1;
         }
     
@@ -1461,7 +1471,7 @@ $fontColor: #F0F0F0;
                         display: flex;
                         // flex-direction: column;
                         align-items: center;
-                        margin-top: 4rem;
+                        margin-top: 0rem;
                         .lady{
                             height: 25rem;
                             width: 30rem;
@@ -1472,10 +1482,7 @@ $fontColor: #F0F0F0;
                     }
                     @keyframes don{
                         from {margin: 50rem auto;}
-                        to {margin: 4rem auto;};
-    
-                        from {display: block;}
-                        to {display: none;}
+                        to {margin: 0rem auto;}
                     }
                 }
             }
@@ -1502,7 +1509,7 @@ $fontColor: #F0F0F0;
                 .laughing-guy{
                     // display: none;
                     position: relative;
-                    right: 6rem;
+                    right: 12rem;
                 }
                 
             }

@@ -42,9 +42,7 @@ function LandingPage() {
                     <section className='first-page'>
                         <div className="text">
                             <h1>
-                                <span>Earn as you support</span> your 
-                                <br />
-                                favorite musician
+                                <span>Earn as you support</span> your favorite musician
                             </h1>
                             <p>
                                 With Urudi, you earn with your idol 

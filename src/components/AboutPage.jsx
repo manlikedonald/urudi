@@ -44,14 +44,10 @@ function AboutPage() {
                     <section className='first-page'>
                         <div className="text">
                             <h1>
-                                <span>We're closing the gap</span> between 
-                                <br />
-                                artistes and their fans
+                                <span>We're closing the gap</span> between artistes and their fans
                             </h1>
                             <p>
-                                Creating a tighter connection for fans and artistes so that love and wealth 
-                                <br />
-                                are distributed together as they both grow 
+                                Creating a tighter connection for fans and artistes so that love and wealth are distributed together as they both grow 
                             </p>
 
                             <div className='button-div'>
